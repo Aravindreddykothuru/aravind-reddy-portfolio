@@ -1,0 +1,4 @@
+.vercel
+.env*
+# Original certificate scans (the site uses the JPG versions)
+images/*.pdf

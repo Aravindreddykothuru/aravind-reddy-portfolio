@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aravind Reddy | AI/ML & Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Aravind Reddy Kothuru, B.Tech AI &amp; ML student building AI and full stack projects: AttendNet, FarmRent and VoiceCast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Runs before first paint so the welcome intro covers the page from the start.
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        root.classList.add('intro-playing');
+        // Safety net: never leave the page locked if the main script fails to load.
+        setTimeout(function () { root.classList.remove('intro-playing'); }, 6000);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- WELCOME INTRO: "PORTFOLIO" letters fall in, then the screen lifts away -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-inner">
+      <p class="intro-welcome"><em>Welcome to my</em></p>
+      <div class="intro-word">
+        <span class="silver-text" style="--d:.42s;--r:-18deg">P</span><span class="silver-text" style="--d:.58s;--r:14deg">O</span><span class="silver-text" style="--d:.47s;--r:-9deg">R</span><span class="silver-text" style="--d:.66s;--r:22deg">T</span><span class="silver-text" style="--d:.52s;--r:-24deg">F</span><span class="silver-text" style="--d:.72s;--r:11deg">O</span><span class="silver-text" style="--d:.44s;--r:-15deg">L</span><span class="silver-text" style="--d:.62s;--r:19deg">I</span><span class="silver-text" style="--d:.55s;--r:-12deg">O</span>
+      </div>
+      <span class="intro-line"></span>
+      <p class="intro-name">Aravind Reddy · AI/ML Engineer &amp; Full Stack Developer</p>
+    </div>
+    <span class="intro-skip">Tap or click to skip</span>
+  </div>
+
+  <div class="top-bar"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="shell nav-bar">
+      <a href="#home" class="brand"><span class="avatar"><img src="images/avatar.jpg" alt="" width="34" height="34" /></span>ARAVIND REDDY<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta">Contact</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="ambient"></div>
+      <div class="orbit" id="heroOrbit"><i></i><i></i><i></i><span></span></div>
+      <div class="shell hero-stage">
+        <!-- Heading layer: drifts down and fades as you scroll -->
+        <div class="heading-layer" id="heroHeading">
+          <p class="eyebrow intro-fade">PORTFOLIO · 2026</p>
+          <h1 class="hero-title" aria-label="Aravind">
+            <span class="silver-text" style="--i:0" aria-hidden="true">A</span><span class="silver-text" style="--i:1" aria-hidden="true">R</span><span class="silver-text" style="--i:2" aria-hidden="true">A</span><span class="silver-text" style="--i:3" aria-hidden="true">V</span><span class="silver-text" style="--i:4" aria-hidden="true">I</span><span class="silver-text" style="--i:5" aria-hidden="true">N</span><span class="silver-text" style="--i:6" aria-hidden="true">D</span>
+          </h1>
+          <div class="caption-row intro-rise">
+            <p class="role">AI/ML Engineer <em>&amp;</em> Full Stack Developer
+              <span>B.Tech AI &amp; ML · JAIN University, Bengaluru</span></p>
+            <a class="hero-contact" href="#contact"><em>Let's talk</em><span class="arrow-circle">&#8601;</span></a>
+          </div>
+        </div>
+        <!-- Portrait layer: moves slower than the heading on scroll -->
+        <div class="portrait-layer" id="heroPortrait">
+          <div class="hero-portrait">
+            <!-- Drop your photo at images/profile.jpg. The monogram shows until then. -->
+            <img src="images/profile.jpg" alt="Portrait of Aravind Reddy" onerror="this.remove()" />
+            <div class="monogram">AR</div>
+          </div>
+        </div>
+        <div class="bottom-row intro-late">
+          <span class="status"><i class="status-dot"></i>OPEN FOR WORK · FULL-TIME &amp; INTERNSHIP OPPORTUNITIES</span>
+          <a href="#about" class="scroll-link">SCROLL TO EXPLORE &#8595;</a>
+          <a href="#projects" class="work-link">SELECTED WORK &#8599;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Python</span><b>✳</b><span>Java</span><b>✳</b><span>React</span><b>✳</b><span>Next.js</span><b>✳</b><span>Node.js</span><b>✳</b><span>Express</span><b>✳</b><span>Flask</span><b>✳</b><span>OpenCV</span><b>✳</b><span>Scikit-learn</span><b>✳</b><span>LangChain</span><b>✳</b><span>Hugging Face</span><b>✳</b><span>PyTorch</span><b>✳</b><span>PostgreSQL</span><b>✳</b><span>Supabase</span><b>✳</b><span>Docker</span><b>✳</b>
+        <span>Python</span><b>✳</b><span>Java</span><b>✳</b><span>React</span><b>✳</b><span>Next.js</span><b>✳</b><span>Node.js</span><b>✳</b><span>Express</span><b>✳</b><span>Flask</span><b>✳</b><span>OpenCV</span><b>✳</b><span>Scikit-learn</span><b>✳</b><span>LangChain</span><b>✳</b><span>Hugging Face</span><b>✳</b><span>PyTorch</span><b>✳</b><span>PostgreSQL</span><b>✳</b><span>Supabase</span><b>✳</b><span>Docker</span><b>✳</b>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="shell about-grid">
+        <div class="about-card reveal">
+          <div class="about-photo">
+            <img src="images/profile.jpg" alt="" onerror="this.remove()" />
+            <div class="monogram small">AR</div>
+          </div>
+          <p class="mono-caption">ARAVIND REDDY<br /><span>AI ENGINEER &amp; BUILDER</span></p>
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">01 / INTRO</p>
+          <h2 class="section-title">Building AI that <em>ships</em> to real users.</h2>
+          <p class="lead">I'm <strong>Aravind Reddy Kothuru</strong>, a B.Tech student in Artificial Intelligence &amp; Machine Learning at JAIN (Deemed-to-be University), Bengaluru. I build end-to-end systems: computer vision pipelines, machine learning models, speech AI, and the full stack products that put them in people's hands.</p>
+          <p class="muted">My strongest foundations are data structures and algorithms in Java and Python. I care about the gap between a model that scores well and a product that works on a farmer's slow Android phone.</p>
+          <div class="facts">
+            <div><span>Education</span><p>B.Tech, AI &amp; ML<br />JAIN University, Bengaluru</p></div>
+            <div><span>Focus</span><p>Generative AI, computer vision,<br />ML, full stack web</p></div>
+            <div><span>Languages</span><p>English, Telugu,<br />Hindi</p></div>
+          </div>
+          <div class="stats">
+            <div><strong>3</strong><span>Featured projects</span></div>
+            <div><strong>2</strong><span>Certificates</span></div>
+            <div><strong>Live</strong><span>FarmRent in production</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAND -->
+    <section class="band">
+      <div class="shell">
+        <p class="eyebrow">IDEAS INTO PRODUCTS · DESIGNED &amp; BUILT BY ARAVIND</p>
+        <h2 class="band-title reveal">From idea to something real: <em>imagine, engineer, launch.</em></h2>
+        <div class="steps">
+          <div class="step reveal"><span>01</span><h3>Imagine</h3><p>Start with the real problem: a missed attendance, a video no one can understand, a tractor sitting idle.</p></div>
+          <div class="step reveal"><span>02</span><h3>Engineer</h3><p>Models, interfaces and infrastructure, built so the hard rules live on the server.</p></div>
+          <div class="step reveal"><span>03</span><h3>Launch</h3><p>Ship it to real users, learn from how they use it, and keep improving.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="shell">
+        <p class="eyebrow">02 / THE TOOLKIT</p>
+        <h2 class="section-title big">What I <em>can do.</em></h2>
+        <div class="skill-grid">
+          <article class="skill skill-wide reveal">
+            <div>
+              <span class="num">01</span>
+              <h3>Generative AI &amp; LLM Engineering</h3>
+              <p>LLM-powered applications: agentic workflows, retrieval-augmented generation, prompt design and deploying models to production.</p>
+            </div>
+            <ul><li>Generative AI</li><li>LLM Engineering</li><li>Agentic AI</li><li>RAG</li><li>LangChain &amp; LangGraph</li><li>Prompt Engineering</li><li>Hugging Face</li><li>PyTorch</li><li>Vector Databases</li><li>AI Model Deployment</li></ul>
+          </article>
+          <article class="skill reveal"><span class="num">02</span><h3>Machine Learning</h3><p>Exploratory analysis, preprocessing, classification and model evaluation.</p><ul><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li></ul></article>
+          <article class="skill reveal"><span class="num">03</span><h3>Computer Vision &amp; Speech</h3><p>Face recognition workflows and speech pipelines for transcription, translation and dubbing.</p><ul><li>OpenCV</li><li>FaceNet</li><li>PIL</li><li>Faster-Whisper</li><li>IndicTrans2</li><li>Pyannote</li><li>Wav2Lip</li></ul></article>
+          <article class="skill reveal"><span class="num">04</span><h3>Frontend</h3><p>Responsive, mobile-first interfaces built from reusable components.</p><ul><li>Next.js</li><li>React</li><li>JavaScript</li><li>HTML/CSS</li></ul></article>
+          <article class="skill reveal"><span class="num">05</span><h3>Backend &amp; APIs</h3><p>REST APIs, authentication, role-based access and real-time sockets.</p><ul><li>Node.js</li><li>Express.js</li><li>Flask</li><li>REST APIs</li><li>Socket.IO</li></ul></article>
+          <article class="skill reveal"><span class="num">06</span><h3>Data &amp; DevOps</h3><p>Relational database design, auth integration, containers and deployment setup.</p><ul><li>PostgreSQL</li><li>Supabase</li><li>Prisma</li><li>Docker</li><li>Git</li></ul></article>
+          <article class="skill reveal"><span class="num">07</span><h3>Core CS</h3><p>Problem solving, OOP and competitive programming.</p><ul><li>Java</li><li>Python</li><li>DSA</li><li>LeetCode</li><li>Git</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="shell">
+        <p class="eyebrow">03 / FEATURED PROJECTS</p>
+        <h2 class="section-title big">Featured <em>projects.</em></h2>
+        <p class="muted sub">Three projects across computer vision, full stack development and GPU-powered speech AI.</p>
+
+        <!-- 1. AttendNet -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="images/attendnet.png" alt="AttendNet home screen with attendance, teacher, registration, student and admin portals" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="num">01</span>
+            <p class="category">Artificial Intelligence · Computer Vision</p>
+            <h3>AttendNet</h3>
+            <p class="tagline">AI-based face recognition attendance system.</p>
+            <p>Developed an automated attendance management system that uses facial recognition to identify individuals and maintain attendance records.</p>
+            <h4>Key contributions</h4>
+            <ul class="contrib">
+              <li>Implemented image-processing workflows using OpenCV.</li>
+              <li>Worked with FaceNet-based facial embeddings for facial representation.</li>
+              <li>Developed face detection and recognition workflows.</li>
+              <li>Integrated recognition functionality with a Flask backend.</li>
+              <li>Worked on automated attendance recording and timestamp management.</li>
+              <li>Implemented attendance record management and Excel export.</li>
+              <li>Explored database integration for storing attendance information.</li>
+            </ul>
+            <div class="metrics"><div><strong>Live</strong><span>Hugging Face demo</span></div><div><strong>Flask</strong><span>Recognition backend</span></div><div><strong>Excel</strong><span>Attendance export</span></div></div>
+            <p class="stack">Python · OpenCV · FaceNet · Flask · NumPy · PIL · Supabase · Excel</p>
+            <div class="links">
+              <a href="https://reddythrived-attendnet.hf.space" target="_blank" rel="noopener">Live demo ↗</a>
+              <a href="https://github.com/Aravindreddykothuru/aTTENDNET" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. FarmRent -->
+        <article class="project reverse reveal">
+          <div class="project-media">
+            <img src="images/farmrent.png" alt="FarmRent language picker offering English, Hindi, Kannada, Telugu, Tamil and more" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="num">02</span>
+            <p class="category">Full-Stack Development · Web Application</p>
+            <h3>FarmRent</h3>
+            <p class="tagline">Agricultural equipment rental marketplace.</p>
+            <p>Developing a digital marketplace that connects farmers with agricultural equipment owners, simplifying equipment discovery, rental booking and management.</p>
+            <h4>Key contributions</h4>
+            <ul class="contrib">
+              <li>Designed the full-stack application architecture.</li>
+              <li>Developed responsive frontend components using Next.js and React.</li>
+              <li>Worked on backend REST API development using Node.js and Express.js.</li>
+              <li>Designed relational database structures using PostgreSQL.</li>
+              <li>Integrated Supabase for database and authentication workflows.</li>
+              <li>Developed equipment listing and booking management workflows.</li>
+              <li>Worked on user authentication and role-based access.</li>
+              <li>Designed real-time GPS tracking architecture using Socket.IO.</li>
+              <li>Explored payment gateway integration.</li>
+              <li>Worked on application deployment and environment configuration.</li>
+            </ul>
+            <div class="metrics"><div><strong>Live</strong><span>farmrentcom.in</span></div><div><strong>REST</strong><span>Express API</span></div><div><strong>Real-time</strong><span>GPS via Socket.IO</span></div></div>
+            <p class="stack">Next.js · React · Node.js · Express.js · PostgreSQL · Supabase · Prisma · Socket.IO · Docker · Git</p>
+            <div class="links">
+              <a href="https://farmrentcom.in" target="_blank" rel="noopener">Visit website ↗</a>
+              <a href="https://github.com/Aravindreddykothuru/FarmRent" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. VoiceCast -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="images/voicecast.png" alt="VoiceCast landing page with the line: Don't just translate. Perform." loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="num">03</span>
+            <p class="category">Artificial Intelligence · Speech Processing · GPU</p>
+            <h3>VoiceCast <span class="badge-gpu">GPU Project</span></h3>
+            <p class="tagline">GPU-accelerated multilingual voice dubbing.</p>
+            <p>Exploring an AI-powered multilingual dubbing solution that converts audio and video content into different languages while generating natural-sounding speech. The deep-learning models in the pipeline run on NVIDIA GPUs for fast processing.</p>
+            <h4>Key contributions</h4>
+            <ul class="contrib">
+              <li>Explored automatic speech recognition and audio transcription.</li>
+              <li>Worked with Faster-Whisper for speech-to-text processing.</li>
+              <li>Explored IndicTrans2 for multilingual translation.</li>
+              <li>Investigated speaker diarization using Pyannote Audio.</li>
+              <li>Explored AI voice synthesis using ElevenLabs.</li>
+              <li>Investigated lip synchronisation using Wav2Lip.</li>
+              <li>Designed a modular speech-processing pipeline.</li>
+              <li>Set up the pipeline to run its speech and translation models on GPU.</li>
+              <li>Explored audio-video synchronisation workflows.</li>
+            </ul>
+            <div class="metrics"><div><strong>GPU</strong><span>Accelerated inference</span></div><div><strong>5</strong><span>AI tools explored</span></div><div><strong>Modular</strong><span>Pipeline design</span></div></div>
+            <p class="stack">Python · NVIDIA GPU (CUDA) · Faster-Whisper · IndicTrans2 · Pyannote Audio · ElevenLabs · Wav2Lip</p>
+            <div class="links">
+              <a href="https://github.com/Aravindreddykothuru/voicecast" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section" id="certificates">
+      <div class="shell">
+        <p class="eyebrow">04 / CREDENTIALS</p>
+        <h2 class="section-title big">My <em>certificates.</em></h2>
+        <div class="cert-grid">
+          <article class="cert reveal">
+            <a class="cert-img" href="images/cert-ideathon.jpg" target="_blank" rel="noopener" aria-label="Open the Ideathon certificate full size">
+              <img src="images/cert-ideathon.jpg" alt="JAIN University Certificate of Recognition for the GRINOVA 2026 Ideathon, awarded to Team Phoenix" loading="lazy" />
+            </a>
+            <div class="cert-body">
+              <span class="cert-issuer">JAIN (Deemed-to-be University) · Centre for Grassroots Research &amp; Innovation</span>
+              <h3>Certificate of Recognition, GRINOVA 2026 Ideathon</h3>
+              <p class="cert-date">12 March 2026 · Team Phoenix</p>
+              <p class="cert-desc">Recognised for commendable performance and an innovative contribution under the theme "Where Local Problems Meet Smart Solutions."</p>
+              <a href="images/cert-ideathon.jpg" target="_blank" rel="noopener">View certificate ↗</a>
+            </div>
+          </article>
+          <article class="cert reveal">
+            <a class="cert-img" href="images/cert-iitk-java.jpg" target="_blank" rel="noopener" aria-label="Open the IIT Kanpur Java certificate full size">
+              <img src="images/cert-iitk-java.jpg" alt="E&amp;ICT Academy IIT Kanpur certificate for the Student Development Program on Java" loading="lazy" />
+            </a>
+            <div class="cert-body">
+              <span class="cert-issuer">E&amp;ICT Academy, IIT Kanpur · MeitY initiative</span>
+              <h3>Student Development Program on Java</h3>
+              <p class="cert-date">20 Dec 2023 to 20 Jan 2024 · Issued 9 Feb 2024</p>
+              <p class="cert-desc">Completed a month-long program on Java run jointly by the Ministry of Electronics &amp; IT and IIT Kanpur.</p>
+              <a href="images/cert-iitk-java.jpg" target="_blank" rel="noopener">View certificate ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section" id="journey">
+      <div class="shell">
+        <p class="eyebrow">05 / LEARNING · BUILDING · SHIPPING</p>
+        <h2 class="section-title big">The <em>journey.</em></h2>
+        <ol class="timeline">
+          <li class="reveal"><span class="year">2026</span><div><h3>Building FarmRent</h3><p>Developing the equipment rental marketplace, now live at farmrentcom.in, with booking workflows and real-time GPS tracking.</p></div></li>
+          <li class="reveal"><span class="year">2026</span><div><h3>Exploring VoiceCast</h3><p>Designing a modular speech-processing pipeline for multilingual AI dubbing.</p></div></li>
+          <li class="reveal"><span class="year">Mar 2026</span><div><h3>Recognised at GRINOVA Ideathon</h3><p>Team Phoenix earned a Certificate of Recognition at JAIN University's Ideathon, "Where Local Problems Meet Smart Solutions."</p></div></li>
+          <li class="reveal"><span class="year">2025</span><div><h3>Built AttendNet</h3><p>Face recognition attendance with OpenCV, FaceNet embeddings, a Flask backend and Excel export.</p></div></li>
+          <li class="reveal"><span class="year">Jan 2024</span><div><h3>Java program, IIT Kanpur</h3><p>Completed the Student Development Program on Java from E&amp;ICT Academy, IIT Kanpur.</p></div></li>
+          <li class="reveal"><span class="year">Now</span><div><h3>B.Tech, AI &amp; ML</h3><p>JAIN (Deemed-to-be University), Bengaluru. Practising DSA in Java and Python alongside projects.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="shell contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">LET'S COLLABORATE</p>
+          <h2 class="section-title big">Get in <em>touch.</em></h2>
+          <p class="lead">Open for work: full-time &amp; internship opportunities. Have a role or an idea in mind? Let's build something that matters.</p>
+          <ul class="contact-list">
+            <li><span>Phone</span><a href="tel:+916309130046">+91 63091 30046</a></li>
+            <li><span>Email</span><a href="mailto:aravindreddy8189@gmail.com">aravindreddy8189@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/aravind-reddy-9994052a4/" target="_blank" rel="noopener">linkedin.com/in/aravind-reddy-9994052a4</a></li>
+            <li><span>GitHub</span><a href="https://github.com/Aravindreddykothuru" target="_blank" rel="noopener">github.com/Aravindreddykothuru</a></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>Name<input name="name" required autocomplete="name" /></label>
+          <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit">Send message ↗</button>
+          <p class="form-note">Opens your email app with the message filled in.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="closing">
+      <div class="shell">
+        <h2 class="silver-text">Let's build something.</h2>
+        <p>Open for work: full-time &amp; internship opportunities.</p>
+        <a href="mailto:aravindreddy8189@gmail.com" class="btn-lime">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-row">
+      <span class="wordmark">ARAVIND</span>
+      <nav><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a></nav>
+      <nav><a href="https://github.com/Aravindreddykothuru" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/aravind-reddy-9994052a4/" target="_blank" rel="noopener">LinkedIn</a></nav>
+    </div>
+    <div class="shell footer-row small">
+      <span>© <span id="year">2026</span> Aravind Reddy. All rights reserved.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

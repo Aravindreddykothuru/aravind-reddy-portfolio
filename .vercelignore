@@ -1,0 +1,7 @@
+# Not part of the website
+images/*.pdf
+.vercel
+.env*
+.gitignore
+.vercelignore
+README.md
